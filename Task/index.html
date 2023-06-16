@@ -1,295 +1,341 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
-        <title>Dashboard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
 
-  <nav class="navbar navbar-expand-lg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-        <a class="navbar-brand" href="#"><strong>Dashboard</strong></a>
-        <div class="search-box mx-auto">
-            <i class="fas fa-search search-icon"></i>
-            <input
-            class="form-control search-input"
-            type="text"
-            placeholder="Search for &quot;Employee, Vendors, Project or Inventory&quot;"
-            />
+            <a class="navbar-brand" href="#"><strong>Dashboard</strong></a>
+            <div class="search-box mx-auto">
+                <i class="fas fa-search search-icon"></i>
+                <input class="form-control search-input" type="text"
+                    placeholder="Search for &quot;Employee, Vendors, Project or Inventory&quot;" />
+            </div>
+            <ul class="navbar-nav nav-icons">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-exclamation-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-calendar"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+                <li class="nav-item nav-text">
+                    <p>Hi, Raju Rastogi</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                </li>
+            </ul>
         </div>
-        <ul class="navbar-nav nav-icons">
-            <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-exclamation-circle"></i></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-calendar"></i></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-            </li>
-            <li class="nav-item nav-text">
-            <p>Welcome, John Doe</p>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-            </li>
+    </nav>
+
+    <div class="left-side-menu bg-primary">
+        <div class="brand-logo">
+            PaintCraft
+        </div>
+        <ul>
+            <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    Dashboard</a></li>
+            <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    </svg>
+                    Employee</a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-paint-bucket" viewBox="0 0 16 16">
+                        <path
+                            d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a2.972 2.972 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1.01 1.01 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4.322 4.322 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067-.707-.707-1.441-1.279-2.068-1.627-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219l-.217.216zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.283 3.283 0 0 1-.131-.673c.091.061.204.15.337.274zm.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088c.054.12.115.243.183.365.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626.122.068.244.13.365.183l-4.861 4.862a.571.571 0 0 1-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46-.66-.66-1.168-1.32-1.46-1.846-.147-.265-.225-.47-.251-.607a.573.573 0 0 1-.01-.068l3.048-3.047zm2.87-1.935a2.44 2.44 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.497 3.497 0 0 0-1.066.091 11.27 11.27 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z" />
+                    </svg>Projects</a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-coin" viewBox="0 0 16 16">
+                        <path
+                            d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                    </svg>Accounts</a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path
+                            d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                    </svg>Inventory</a></li>
+            <li><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                    </svg>
+                </a></li>
         </ul>
-        </div>
-  </nav>
+    </div>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-
-                    <div class="row">
-                        <div class="col-sm-2 custom-div">Open Leads</div>
-                        <div class="col-sm-2 custom-div">Opportunities</div>
-                        <div class="col-sm-2 custom-div">Confirmed Sites</div>
-                        <div class="col-sm-2 custom-div">In Progress</div>
-                        <div class="col-sm-2 custom-div">Completed</div>
-                    </div>
-
-                    <div class="row">
-                        <div class="custom-div" col-sm-12>
-                            <h2 class="table-heading">Projects In Progress</h2>
-                            <p class="table-separator"></p>
-                            <table class="table">
-
-                                <thead>
-                                    <tr>
-                                    <th>Project</th>
-                                    <th>Status</th>
-                                    <th>Progress</th>
-                                    <th>End Date</th>
-                                    <th>Actions</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="table-row">
-                                                <p>The Mehtas</p>
-                                                <p>123456788</p>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-primary">QC VISIT</span></td>
-                                        <td><div class="chart">65%</div></td>
-                                        <td>31 Oct 2022</td>
-                                        <td>View Details</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="table-row">
-                                                <p>New Aditi's Apartment</p>
-                                                <p>123456788</p>
-                                            </div>
-                                        </td>
-                                    <td><span class="badge bg-secondary">CHECK LEFTOVER</span></td>
-                                    <td><div class="chart">65%</div></td>
-                                    <td>31 Oct 2022</td>
-                                    <td>View Details</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="table-row">
-                                                <p>The Sharma's Residence</p>
-                                                <p>123456788</p>
-                                            </div>
-                                        </td>
-                                    <td><span class="badge bg-success">IN PROGRESS</span></td>
-                                    <td><div class="chart">65%</div></td>
-                                    <td>31 Oct 2022</td>
-                                    <td>View Details</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="table-row">
-                                                <p>The Cottage</p>
-                                                <p>123456788</p>
-                                            </div>
-                                        </td>
-                                    <td><span class="badge bg-primary">QC REPORT</span></td>
-                                    <td><div class="chart">65%</div></td>
-                                    <td>31 Oct 2022</td>
-                                    <td>View Details</td>
-                                    </tr>
-                                </tbody>
-
-                            </table>
+    <div class="container-fluid left-side-menu-open">
+        <div class="row">
+            <div class="col-lg-8 mt-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="cus-small-card border-radius-lg p-3 border-shadow-sm bg-white mb-4">
+                            <h4>10</h4>
+                            <h5>Open Leads</h5>
+                            <p class="mb-0">8 responsive, 2 unresponsive</p>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="custom-div">
-                                <div class="subheading">
-                                    Today's workforce
-                                </div>
-
-                                <div class="pie-chart">
-                                    <div class="chart-container">
-                                    <div class="chart-fill"></div>
-                                    <div class="chart-text">75%</div>
-                                    </div>
-                                </div>
-
-                                <div class="identical-divs">
-                                    <div class="row">
-                                        <div class="inner-div">
-                                            <div class="paragraphs">
-                                                <p>Absent</p>
-                                                <p>30</p>
-                                            </div>
-                                            <div class="arrow"></div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                        <div class="inner-div">
-                                            <div class="paragraphs">
-                                                <p>Present</p>
-                                                <p>200</p>
-                                            </div>
-                                            <div class="arrow">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="cus-small-card border-radius-lg p-3 border-shadow-sm bg-white mb-4">
+                            <h4>10</h4>
+                            <h5>Open Leads</h5>
+                            <p class="mb-0">8 responsive, 2 unresponsive</p>
                         </div>
-
-                        <div class="col-8 custom-div">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="col-6">
-                                        <select class="form-select" aria-label="Select option">
-                                        <option value="" selected disabled>This Month</option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="pie-chart">
-                                            <div class="chart-container">
-                                                <div class="chart-fill"></div>
-                                                <div class="chart-text">75%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-1 vertical-divider">|</div>
-
-                                <div class="col-7">
-                                    <h2 class="table-heading">Expenses</h2>
-                                    <table class="table">
-
-                                        <thead>
-                                            <tr>
-                                                <th>Column 1</th>
-                                                <th>Column 2</th>
-                                                <th>Column 3</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-                                            <tr>
-                                                <td>Data 1</td>
-                                                <td><span class="badge bg-primary">Pill 1</span></td>
-                                                <td><div class="chart">Progress Chart 1</div></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Data 2</td>
-                                                <td><span class="badge bg-secondary">Pill 2</span></td>
-                                                <td><div class="chart">Progress Chart 2</div></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Data 3</td>
-                                                <td><span class="badge bg-success">Pill 3</span></td>
-                                                <td><div class="chart">Progress Chart 3</div></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Data 3</td>
-                                                <td><span class="badge bg-success">Pill 4</span></td>
-                                                <td><div class="chart">Progress Chart 4</div></td>
-                                            </tr>
-                                        </tbody>
-
-                                    </table>
-                                    <button class="btn btn-primary submit-button">Add Expense</button>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="cus-small-card border-radius-lg p-3 border-shadow-sm bg-white mb-4">
+                            <h4>10</h4>
+                            <h5>Open Leads</h5>
+                            <p class="mb-0">8 responsive, 2 unresponsive</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="cus-small-card border-radius-lg p-3 border-shadow-sm bg-white mb-4">
+                            <h4>10</h4>
+                            <h5>Open Leads</h5>
+                            <p class="mb-0">8 responsive, 2 unresponsive</p>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cus-small-card border-radius-lg border-shadow-sm p-3 bg-white mb-4">
+                            <div class="card-title mb-2 d-flex justify-content-between">
+                                <h6>Project in Progress</h6>
+                                <a href="#">View All</a>
+                            </div>
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Project</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Progress</th>
+                                        <th scope="col">End Date</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>The Mehtas</strong>
+                                            <div>12345678</div>
+                                        </td>
+                                        <td><span class="badge rounded-pill text-bg-warning">QC Visit</span></td>
+                                           <td class="progress-pie">
+                                            <div class="progress blue">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
 
-                <div class="col-4">
-                    <div class="custom-div">
-                        <h2>Taskbar</h2>
-                        <div class="rounded">
-                            <ul class="nav nav-tabs d-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link active rounded-top" data-bs-toggle="tab" href="#today">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link rounded-top" data-bs-toggle="tab" href="#tomorrow">Tomorrow</a>
-                                </li>
-                            </ul>
+                                        </td>
+                                        <td>31 Oct 2022</td>
+                                        <td><a href="#">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>The Mehtas</strong>
+                                            <div>12345678</div>
+                                        </td>
+                                        <td><span class="badge rounded-pill text-bg-warning">QC Visit</span></td>
+                                           <td class="progress-pie">
+                                            <div class="progress blue">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+
+                                        </td>
+                                        <td>31 Oct 2022</td>
+                                        <td><a href="#">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>The Mehtas</strong>
+                                            <div>12345678</div>
+                                        </td>
+                                        <td><span class="badge rounded-pill text-bg-warning">QC Visit</span></td>
+                                           <td class="progress-pie">
+                                            <div class="progress blue">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+
+                                        </td>
+                                        <td>31 Oct 2022</td>
+                                        <td><a href="#">View Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>The Mehtas</strong>
+                                            <div>12345678</div>
+                                        </td>
+                                        <td><span class="badge rounded-pill text-bg-warning">QC Visit</span></td>
+                                           <td class="progress-pie">
+                                            <div class="progress blue">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                              </div>
+
+                                        </td>
+                                        <td>31 Oct 2022</td>
+                                        <td><a href="#">View Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="cus-small-card border-radius-lg border-shadow-sm p-3 bg-white mb-4">
+                            <div class="card-title mb-2">
+                                <h6>Today's workforce</h6>
+                            </div>
+                            <div class="wf-chart-circle">
 
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="today">
-                                <div class="scrollable-list">
-                                    <div class="custom-list-item">
-                                        <div class="mt-4">
-                                            <p class="d-inline">Received 5 mins ago</p>
-                                            <div class="d-inline bg-primary rounded ml-2 color-tag">Approve by Today, 5:00 PM</div>
-                                        </div>
-                                        <h4 class="mt-3">Approve the BOM</h4>
-                                        <div class="d-flex">
-                                            <div class="mr-auto">
-                                                <p>Aditi's new Apartment</p>
-                                                <p>Team Load Mukesh Soni</p>
-                                            </div>
-                                            <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
-                                        </div>
+                            </div>
+                            <div class="wf-chart-list">
+                                <a href="#"
+                                    class="d-flex justify-content-between align-items-center py-2 px-4 border-radius-lg bg-primary text-dark bg-opacity-25 mb-3">
+                                    <h6>Absent<br>30</h6>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="d-flex justify-content-between align-items-center py-2 px-4 border-radius-lg bg-primary text-dark bg-opacity-25">
+                                    <h6>Absent<br>30</h6>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="cus-small-card border-radius-lg border-shadow-sm bg-white mb-4">
+                            <div class="row">
+                                <div class="col-lg-5 pe-0 border-end">
+                                    <div class="p-3">
+                                        <select class="form-select mb-2" aria-label="Default select example">
+                                            <option selected>This Month</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                        <table class="table table-sm ">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-start">Rent</td>
+                                                    <td class="text-end">₹ 40,000/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">Electricity</td>
+                                                    <td class="text-end">₹ 40,000/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">Salary</td>
+                                                    <td class="text-end">₹ 2,00,000/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">New Payment</td>
+                                                    <td class="text-end">₹ 2,00,000/-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-lg-7 ps-0">
+                                    <div class="p-3">
+                                        <div class="card-title mb-2 d-flex justify-content-between">
+                                            <h6>Expenses</h6>
+                                            <a href="#">View All Transactions</a>
+                                        </div>
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
 
-                            <div class="tab-pane fade" id="tomorrow">
-                                <div class="scrollable-list">
-                                    <div class="custom-list-item">
-                                        <div class="mt-4">
-                                            <p class="d-inline">TBD</p>
-                                            <div class="d-inline bg-primary rounded ml-2">Approve by Tomorrow, 5:00 PM</div>
-                                        </div>
-                                        <h4 class="mt-3">Verify Expense</h4>
-                                        <div class="d-flex">
-                                            <div class="mr-auto">
-                                                <p>Monthly Bill</p>
-                                                <p>Type Utility</p>
-                                            </div>
-                                            <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
-                                        </div>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bandra Paints</td>
+                                                    <td>31 Oc 2022</td>
+                                                    <td class="link-danger">₹ -10,200/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bandra Paints</td>
+                                                    <td>31 Oc 2022</td>
+                                                    <td class="link-danger">₹ -10,200/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bandra Paints</td>
+                                                    <td>31 Oc 2022</td>
+                                                    <td class="link-success">₹ 10,200/-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bandra Paints</td>
+                                                    <td>31 Oc 2022</td>
+                                                    <td class="link-success">₹ 10,200/-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-primary">Add Expenses</button>
                                     </div>
                                 </div>
                             </div>
@@ -297,12 +343,208 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script
-            src="https://kit.fontawesome.com/6d7d653a55.js"
-            crossorigin="anonymous"
-            ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+            <div class="col-lg-4 mt-3">
+                <div class="cus-small-card border-radius-lg border-shadow-sm p-3 bg-white mb-4">
+
+                    <div class="card-title mb-2 d-flex justify-content-between">
+                        <h5>Task Bar</h5>
+                    </div>
+
+                    <div class="cus-tabs">
+                        <div class="btn-group mb-2" id="pills-tab" role="tablist">
+                            <button class="btn btn-outline-primary active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Today</button>
+                            <button class="btn btn-outline-primary" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Tomorrow</button>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-primary p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                                <div class="task-list border-radius-lg mb-2 bg-success p-3 text-dark bg-opacity-10">
+                                    <p>Received 5 min ago</p>
+                                    <h5>Approve the BOM</h5>
+                                    <p><strong>Aditi New Apartment</strong></p>
+                                    <p>Team Lead <strong>Mukesh Soni</strong></p>
+                                    <span class="badge text-bg-warning bg-opacity-25">Approve by Today, 5:00 PM</span>
+                                    <button type="button" class="btn btn-outline-primary">Check & Approve</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/6d7d653a55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
