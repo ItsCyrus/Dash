@@ -202,3 +202,10 @@ body {
 .table-padding {
   padding: 10px;
 }
+
+/* List */
+.custom-list-item {
+  background-color: #f5f8ff;
+  border-radius: 9px;
+  padding: 10px;
+}
