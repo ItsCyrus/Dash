@@ -19,11 +19,14 @@ margin: 0;
 }
 
 .navbar-brand {
+  font-weight: bold;
   margin-right: auto;
 }
 
 .search-box {
   position: relative;
+  width: 500px; /* Adjust the width as needed */
+  margin: 0 auto;
 }
 
 .search-icon {
@@ -37,6 +40,7 @@ margin: 0;
 .search-input {
   padding-left: 35px;
   padding-right: 10px;
+  width: 100%;
 }
 
 .nav-icons {
@@ -45,10 +49,6 @@ margin: 0;
 }
 
 .nav-icons i {
-  margin-right: 10px;
-}
-
-.nav-text {
   margin-right: 10px;
 }
 
