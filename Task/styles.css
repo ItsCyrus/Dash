@@ -174,3 +174,48 @@ margin: 0;
     padding: 10px;
     margin-bottom: 10px;
   }
+
+.nav-tabs {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: blue;
+  color: white;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.scrollable-list {
+  max-height: 100%;
+  overflow-y: auto;
+  border: none;
+  padding: 10px;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 4px;
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.color-tag
+{
+background-color: #fcefc7;
+}
