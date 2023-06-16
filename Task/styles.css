@@ -205,7 +205,8 @@ body {
 
 /* List */
 .custom-list-item {
-  background-color: #f5f8ff;
+  background-color: #eaeffc;
   border-radius: 9px;
   padding: 10px;
+  margin-bottom: 10px;
 }
