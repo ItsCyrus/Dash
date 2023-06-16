@@ -204,6 +204,11 @@ body {
 }
 
 /* List */
+.scrollable-list {
+  height: 200px;
+  overflow: auto;
+}
+
 .custom-list-item {
   background-color: #eaeffc;
   border-radius: 9px;
