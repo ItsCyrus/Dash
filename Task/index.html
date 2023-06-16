@@ -1,309 +1,303 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <title>Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
   </head>
 
   <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#"><strong>Dashboard</strong></a>
-      <div class="search-box mx-auto">
-        <i class="fas fa-search search-icon"></i>
-        <input
-          class="form-control search-input"
-          type="text"
-          placeholder="Search for &quot;Employee, Vendors, Project or Inventory&quot;"
-        />
-      </div>
-      <ul class="navbar-nav nav-icons">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-exclamation-circle"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-calendar"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-        </li>
-        <li class="nav-item nav-text">
-          <p>Welcome, John Doe</p>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-        </li>
-      </ul>
-    </div>
+        <div class="container">
+        <a class="navbar-brand" href="#"><strong>Dashboard</strong></a>
+        <div class="search-box mx-auto">
+            <i class="fas fa-search search-icon"></i>
+            <input
+            class="form-control search-input"
+            type="text"
+            placeholder="Search for &quot;Employee, Vendors, Project or Inventory&quot;"
+            />
+        </div>
+        <ul class="navbar-nav nav-icons">
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-exclamation-circle"></i></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-calendar"></i></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+            </li>
+            <li class="nav-item nav-text">
+            <p>Welcome, John Doe</p>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+            </li>
+        </ul>
+        </div>
   </nav>
 
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
 
-
-<body>
-<div class="container">
-        <div class="row">
-            <div class="col-8">
-
-                <div class="row">
-                    <div class="col-sm-2 custom-div">Open Leads</div>
-                    <div class="col-sm-2 custom-div">Opportunities</div>
-                    <div class="col-sm-2 custom-div">Confirmed Sites</div>
-                    <div class="col-sm-2 custom-div">In Progress</div>
-                    <div class="col-sm-2 custom-div">Completed</div>
-                </div>
-
-                <div class="row">
-                    <div class="custom-div" col-sm-12>
-                        <h2 class="table-heading">Projects In Progress</h2>
-                        <p class="table-separator"></p>
-                        <table class="table">
-                        <thead>
-                            <tr>
-                            <th>Project</th>
-                            <th>Status</th>
-                            <th>Progress</th>
-                            <th>End Date</th>
-                            <th>Actions</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                            <td>
-                                <div class="table-row">
-                                    <p>The Mehtas</p>
-                                    <p>123456788</p>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-primary">QC VISIT</span></td>
-                            <td><div class="chart">65%</div></td>
-                            <td>31 Oct 2022</td>
-                            <td>View Details</td>
-                            </tr>
-
-                            <tr>
-                            <td>
-                                <div class="table-row">
-                                    <p>New Aditi's Apartment</p>
-                                    <p>123456788</p>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-secondary">CHECK LEFTOVER</span></td>
-                            <td><div class="chart">65%</div></td>
-                            <td>31 Oct 2022</td>
-                            <td>View Details</td>
-                            </tr>
-
-                            <tr>
-                            <td>
-                                <div class="table-row">
-                                    <p>The Sharma's Residence</p>
-                                    <p>123456788</p>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-success">IN PROGRESS</span></td>
-                            <td><div class="chart">65%</div></td>
-                            <td>31 Oct 2022</td>
-                            <td>View Details</td>
-                            </tr>
-
-                            <tr>
-                            <td>
-                                <div class="table-row">
-                                    <p>The Cottage</p>
-                                    <p>123456788</p>
-                                </div>
-                            </td>
-                            <td><span class="badge bg-primary">QC REPORT</span></td>
-                            <td><div class="chart">65%</div></td>
-                            <td>31 Oct 2022</td>
-                            <td>View Details</td>
-                            </tr>
-
-                        </tbody>
-
-                        </table>
+                    <div class="row">
+                        <div class="col-sm-2 custom-div">Open Leads</div>
+                        <div class="col-sm-2 custom-div">Opportunities</div>
+                        <div class="col-sm-2 custom-div">Confirmed Sites</div>
+                        <div class="col-sm-2 custom-div">In Progress</div>
+                        <div class="col-sm-2 custom-div">Completed</div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-3 custom-div">
-                        <div class="col-3">
+                    <div class="row">
+                        <div class="custom-div" col-sm-12>
+                            <h2 class="table-heading">Projects In Progress</h2>
+                            <p class="table-separator"></p>
+                            <table class="table">
+
+                                <thead>
+                                    <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                    <th>End Date</th>
+                                    <th>Actions</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-row">
+                                                <p>The Mehtas</p>
+                                                <p>123456788</p>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-primary">QC VISIT</span></td>
+                                        <td><div class="chart">65%</div></td>
+                                        <td>31 Oct 2022</td>
+                                        <td>View Details</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="table-row">
+                                                <p>New Aditi's Apartment</p>
+                                                <p>123456788</p>
+                                            </div>
+                                        </td>
+                                    <td><span class="badge bg-secondary">CHECK LEFTOVER</span></td>
+                                    <td><div class="chart">65%</div></td>
+                                    <td>31 Oct 2022</td>
+                                    <td>View Details</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="table-row">
+                                                <p>The Sharma's Residence</p>
+                                                <p>123456788</p>
+                                            </div>
+                                        </td>
+                                    <td><span class="badge bg-success">IN PROGRESS</span></td>
+                                    <td><div class="chart">65%</div></td>
+                                    <td>31 Oct 2022</td>
+                                    <td>View Details</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="table-row">
+                                                <p>The Cottage</p>
+                                                <p>123456788</p>
+                                            </div>
+                                        </td>
+                                    <td><span class="badge bg-primary">QC REPORT</span></td>
+                                    <td><div class="chart">65%</div></td>
+                                    <td>31 Oct 2022</td>
+                                    <td>View Details</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 custom-div">
+
                             <div class="subheading">Today's workforce</div>
 
-                            <div class="pie-chart">
-                                <div class="chart-container">
-                                <div class="chart-fill"></div>
-                                <div class="chart-text">75%</div>
-                                </div>
-                            </div>
-
-                            <div class="div-container">
-                                <div class="identical-divs">
-                                <div class="inner-div">
-                                    <div class="paragraphs">
-                                    <p>Absent</p>
-                                    <p>30</p>
+                                <div class="pie-chart">
+                                    <div class="chart-container">
+                                    <div class="chart-fill"></div>
+                                    <div class="chart-text">75%</div>
                                     </div>
-
-                                    <div class="arrow"></div>
                                 </div>
 
-                                <div class="inner-div">
-                                    <div class="paragraphs">
-                                    <p>Present</p>
-                                    <p>200</p>
+                                <div class="row">
+                                    <div class="identical-divs">
+                                        <div class="inner-div">
+                                            <div class="paragraphs">
+                                                <p>Absent</p>
+                                                <p>30</p>
+                                            </div>
+
+                                            <div class="arrow"></div>
+                                        </div>
+
+                                        <div class="inner-div">
+                                            <div class="paragraphs">
+                                                <p>Present</p>
+                                                <p>200</p>
+                                            </div>
+                                            <div class="arrow"></div>
+                                        </div>
                                     </div>
-                                    <div class="arrow"></div>
                                 </div>
+
+                        </div>
+
+                        <div class="col-8 custom-div">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="col-6">
+                                        <select class="form-select" aria-label="Select option">
+                                        <option value="" selected disabled>This Month</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="pie-chart">
+                                            <div class="chart-container">
+                                                <div class="chart-fill"></div>
+                                                <div class="chart-text">75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-1 vertical-divider">|</div>
+
+                                <div class="col-7">
+                                    <h2 class="table-heading">Expenses</h2>
+                                    <table class="table">
+
+                                        <thead>
+                                            <tr>
+                                                <th>Column 1</th>
+                                                <th>Column 2</th>
+                                                <th>Column 3</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Data 1</td>
+                                                <td><span class="badge bg-primary">Pill 1</span></td>
+                                                <td><div class="chart">Progress Chart 1</div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Data 2</td>
+                                                <td><span class="badge bg-secondary">Pill 2</span></td>
+                                                <td><div class="chart">Progress Chart 2</div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Data 3</td>
+                                                <td><span class="badge bg-success">Pill 3</span></td>
+                                                <td><div class="chart">Progress Chart 3</div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Data 3</td>
+                                                <td><span class="badge bg-success">Pill 4</span></td>
+                                                <td><div class="chart">Progress Chart 4</div></td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                    <button class="btn btn-primary submit-button">Add Expense</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-8 custom-div">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="col-6">
-                                    <select class="form-select" aria-label="Select option">
-                                    <option value="" selected disabled>This Month</option>
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <div class="pie-chart">
-                                        <div class="chart-container">
-                                        <div class="chart-fill"></div>
-                                        <div class="chart-text">75%</div>
+                <div class="col-4">
+                    <div class="custom-div">
+                        <h2>Taskbar</h2>
+                        <div class="rounded">
+                            <ul class="nav nav-tabs d-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link active rounded-top" data-bs-toggle="tab" href="#today">Today</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded-top" data-bs-toggle="tab" href="#tomorrow">Tomorrow</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="today">
+                                <div class="scrollable-list">
+                                    <div class="custom-list-item">
+                                        <div class="mt-4">
+                                            <p class="d-inline">Received 5 mins ago</p>
+                                            <div class="d-inline bg-primary rounded ml-2 color-tag">Approve by Today, 5:00 PM</div>
+                                        </div>
+                                        <h4 class="mt-3">Approve the BOM</h4>
+                                        <div class="d-flex">
+                                            <div class="mr-auto">
+                                                <p>Aditi's new Apartment</p>
+                                                <p>Team Load Mukesh Soni</p>
+                                            </div>
+                                            <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-1 vertical-divider">|</div>
-
-                            <div class="col-7">
-                                <h2 class="table-heading">Expenses</h2>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                        <th>Column 1</th>
-                                        <th>Column 2</th>
-                                        <th>Column 3</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                        <td>Data 1</td>
-                                        <td><span class="badge bg-primary">Pill 1</span></td>
-                                        <td><div class="chart">Progress Chart 1</div></td>
-                                        </tr>
-                                        <tr>
-                                        <td>Data 2</td>
-                                        <td><span class="badge bg-secondary">Pill 2</span></td>
-                                        <td><div class="chart">Progress Chart 2</div></td>
-                                        </tr>
-                                        <tr>
-                                        <td>Data 3</td>
-                                        <td><span class="badge bg-success">Pill 3</span></td>
-                                        <td><div class="chart">Progress Chart 3</div></td>
-                                        </tr>
-                                        <tr>
-                                        <td>Data 3</td>
-                                        <td><span class="badge bg-success">Pill 4</span></td>
-                                        <td><div class="chart">Progress Chart 4</div></td>
-                                        </tr>
-                                    </tbody>
-
-                                </table>
-                                <button class="btn btn-primary submit-button">Add Expense</button>
+                            <div class="tab-pane fade" id="tomorrow">
+                                <div class="scrollable-list">
+                                    <div class="custom-list-item">
+                                        <div class="mt-4">
+                                            <p class="d-inline">TBD</p>
+                                            <div class="d-inline bg-primary rounded ml-2">Approve by Tomorrow, 5:00 PM</div>
+                                        </div>
+                                        <h4 class="mt-3">Verify Expense</h4>
+                                        <div class="d-flex">
+                                            <div class="mr-auto">
+                                                <p>Monthly Bill</p>
+                                                <p>Type Utility</p>
+                                            </div>
+                                            <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-4">
-                <div class="custom-div">
-                    <h2>Taskbar</h2>
-                    <div class="rounded">
-                        <ul class="nav nav-tabs d-flex">
-                            <li class="nav-item">
-                                <a class="nav-link active rounded-top" data-bs-toggle="tab" href="#today">Today</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link rounded-top" data-bs-toggle="tab" href="#tomorrow">Tomorrow</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="today">
-                            <div class="scrollable-list">
-
-                                <div class="custom-list-item">
-                                    <div class="mt-4">
-                                        <p class="d-inline">Received 5 mins ago</p>
-                                        <div class="d-inline bg-primary rounded ml-2 color-tag">Approve by Today, 5:00 PM</div>
-                                    </div>
-                                    <h4 class="mt-3">Approve the BOM</h4>
-                                    <div class="d-flex">
-                                        <div class="mr-auto">
-                                            <p>Aditi's new Apartment</p>
-                                            <p>Team Load Mukesh Soni</p>
-                                        </div>
-                                        <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="tomorrow">
-                            <div class="scrollable-list">
-
-                                <div class="custom-list-item">
-                                    <div class="mt-4">
-                                        <p class="d-inline">TBD</p>
-                                        <div class="d-inline bg-primary rounded ml-2">Approve by Tomorrow, 5:00 PM</div>
-                                    </div>
-                                    <h4 class="mt-3">Verify Expense</h4>
-                                    <div class="d-flex">
-                                        <div class="mr-auto">
-                                            <p>Monthly Bill</p>
-                                            <p>Type Utility</p>
-                                        </div>
-                                        <button class="btn btn-outline-primary ml-2 align-self-center">Check & Approve</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
         </div>
-    </div>
-</body>
 
-<script
-      src="https://kit.fontawesome.com/6d7d653a55.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <script
+            src="https://kit.fontawesome.com/6d7d653a55.js"
+            crossorigin="anonymous"
+            ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
