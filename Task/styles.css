@@ -41,8 +41,29 @@ body {
   margin-right: 10px;
 }
 
+/* Custom div */
+#custom-div {
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Table */
+.table-heading {
+  color: blue;
+  text-decoration: underline;
+}
+
+.table-separator {
+  border-bottom: 2px solid;
+}
+
+.table tbody tr {
+  padding: 5px 0;
+}
+
 /* Progress */
-.mt-100{
+.mt-100 {
   margin-top: 200px;
 }
 .progress {
@@ -65,7 +86,7 @@ body {
   top: 0;
   left: 0;
 }
-.progress>span {
+.progress > span {
   width: 50%;
   height: 100%;
   overflow: hidden;
